@@ -1,155 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh">
-<head>
-	<meta charset="UTF-8">
-  <meta http-equiv="x-dns-prefetch-control" content="on">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta content="MHuiG (@MHuiG)" name="application-name">
-  <meta content="MHuiG (@MHuiG)" name="apple-mobile-web-app-title">
-  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
-  <meta content="telephone=no" name="format-detection">
-	<title>MHuiG (@MHuiG)</title>
-  <link rel="shortcut icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon.ico">
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_180.png">
-  <link rel="mask-icon" color="#1BC3FB" href="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_180.png">
-  <meta name="keywords" content="MHuiG, @MHuiG, iMHuiG, Home, 个人主页">
-  <meta name="description" content="MHuiG's Home —— MHuiG (@MHuiG) 的个人主页 MHuiG's Home —— MHuiG (@MHuiG) 的小窝">
-  <link rel="canonical" href="https://mhuig.top/"/>
-  <meta content="no-transform" http-equiv="Cache-Control" />
-  <meta content="no-siteapp" http-equiv="Cache-Control" />
-  <meta property="og:title" content="MHuiG's Home (@MHuiG)" />
-  <meta property="og:type" content="Website" />
-  <meta property="og:url" content="https://mhuig.top/" />
-  <meta property="og:image" content="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png" />
-  <meta property="og:description" content="MHuiG's Home —— MHuiG (@MHuiG) 的小窝" />
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png">
-  <meta name="twitter:creator" content="@iMHuiG">
-  <meta name="twitter:site" content="@iMHuiG">
-  <meta property="og:audio" content="http://cdn.jsdelivr.net/gh/MHuiG/blog-cdn@master/Marshmello/fly.mp3" />
-  <meta property="og:audio:secure_url" content="http://cdn.jsdelivr.net/gh/MHuiG/blog-cdn@master/Marshmello/fly.mp3" />
-  <meta property="og:audio:type" content="audio/mpeg" />
-	<style>
-    body {
-      background: #ebedee;
-      color: rgba(0, 0, 0, 0.6);
-      font-size: 14px;
-      line-height: 1.6em;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-transition: 0.5s ease;
-              transition: 0.5s ease;
-    }
-    .card {
-      position: absolute;
-      z-index: 1;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      width: 400px;
-      height: 200px;
-      border-radius: 12px;
-      box-sizing: border-box;
-      padding: 48px;
-      text-align: center;
-      background: rgba(255,255,255,.9)!important;
-      backdrop-filter: saturate(200%) blur(20px);
-    }
-    .card:hover{
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    }
-    .product {
-      height: 100px;
-      position: relative;
-      overflow: hidden;
-      -webkit-transition: 0.5s ease;
-              transition: 0.5s ease;
-    }
-    .title {
-      margin: 0 0 12px;
-      color: #555;
-      font-size: 24px;
-      -webkit-transition: 0.5s ease;
-              transition: 0.5s ease;
-    }
-    .description {
-      margin: 0 0 10px;
-      text-align: center;
-    }
-    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-    ::-webkit-scrollbar-track-piece {
-      background-color:#f8f8f8;
-    }
-    ::-webkit-scrollbar {
-      width:9px;
-      height:9px;
-    }
-    a{
-      color: #0070ff;
-      text-decoration: none;
-    }
-    .footer{
-      text-align: center;
-      width:100%; 
-      height:60px; 
-      position:fixed; 
-      z-index: -1;
-      bottom:0px;
-    }
-  </style>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "author": {
-        "@type": "Person",
-        "name": "MHuiG",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta content="MHuiG (@MHuiG)" name="application-name" />
+    <meta content="MHuiG (@MHuiG)" name="apple-mobile-web-app-title" />
+    <meta
+      content="black-translucent"
+      name="apple-mobile-web-app-status-bar-style"
+    />
+    <meta content="telephone=no" name="format-detection" />
+    <title>MHuiG (@MHuiG)</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      sizes="16x16 32x32 48x48 64x64"
+      href="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_180.png"
+    />
+    <link
+      rel="mask-icon"
+      color="#1BC3FB"
+      href="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_180.png"
+    />
+    <meta name="keywords" content="MHuiG, @MHuiG, iMHuiG, Home, 个人主页" />
+    <meta
+      name="description"
+      content="MHuiG's Home —— MHuiG (@MHuiG) 的个人主页 MHuiG's Home —— MHuiG (@MHuiG) 的小窝"
+    />
+    <link rel="canonical" href="https://mhuig.top/" />
+    <meta content="no-transform" http-equiv="Cache-Control" />
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <meta property="og:title" content="MHuiG's Home (@MHuiG)" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://mhuig.top/" />
+    <meta
+      property="og:image"
+      content="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png"
+    />
+    <meta
+      property="og:description"
+      content="MHuiG's Home —— MHuiG (@MHuiG) 的小窝"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:image"
+      content="https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png"
+    />
+    <meta name="twitter:creator" content="@iMHuiG" />
+    <meta name="twitter:site" content="@iMHuiG" />
+    <meta
+      property="og:audio"
+      content="http://cdn.jsdelivr.net/gh/MHuiG/blog-cdn@master/Marshmello/fly.mp3"
+    />
+    <meta
+      property="og:audio:secure_url"
+      content="http://cdn.jsdelivr.net/gh/MHuiG/blog-cdn@master/Marshmello/fly.mp3"
+    />
+    <meta property="og:audio:type" content="audio/mpeg" />
+    <style>
+      body {
+        background: #ebedee;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        line-height: 1.6em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+      }
+      .card {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 400px;
+        height: 200px;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 48px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(20px);
+      }
+      .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      }
+      .product {
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+      }
+      .title {
+        margin: 0 0 12px;
+        color: #555;
+        font-size: 24px;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+      }
+      .description {
+        margin: 0 0 10px;
+        text-align: center;
+      }
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      ::-webkit-scrollbar-track-piece {
+        background-color: #f8f8f8;
+      }
+      ::-webkit-scrollbar {
+        width: 9px;
+        height: 9px;
+      }
+      a {
+        color: #0070ff;
+        text-decoration: none;
+      }
+      .footer {
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        z-index: -1;
+        bottom: 0px;
+      }
+    </style>
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "MHuiG",
+          "url": "https://mhuig.top/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png",
+            "width": 192,
+            "height": 192
+          }
         },
-        "description": "「Be Yourself, Make a Difference.」"
-      },
-      "url": "https://mhuig.top",
-      "logo": "https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png"
-      },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://mhuig.top" },
-      "keywords": "MHuiG, @MHuiG, iMHuiG, Home, 个人主页",
-      "description": "MHuiG's Home —— MHuiG (@MHuiG) 的小窝",
-      "sameAs": [
-        "https://github.com/MHuiG",
-        "https://twitter.com/iMHuiG",
-        "https://t.me/iMHuiG",
-        "https://keybase.io/MHuiG"
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "MHuiG",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png"
+          },
+          "url": "https://blog.mhuig.top/",
+          "description": "「Be Yourself, Make a Difference.」"
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "name": "MHuiG | @MHuiG",
+          "url": "https://mhuig.top",
+          "keywords": ["MHuiG", "@MHuiG", "iMHuiG", "Home", "个人主页"],
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://mhuig.top"
+          },
+          "description": "MHuiG's Home —— MHuiG (@MHuiG) 的小窝",
+          "sameAs": [
+            "https://github.com/MHuiG",
+            "https://twitter.com/iMHuiG",
+            "https://t.me/iMHuiG",
+            "https://keybase.io/MHuiG"
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "MHuiG",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png"
+            },
+            "url": "https://blog.mhuig.top/",
+            "description": "「Be Yourself, Make a Difference.」"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MHuiG",
+            "url": "https://mhuig.top/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://cdn.jsdelivr.net/npm/mhg@0.0.0/favicon/favicon_192.png",
+              "width": 192,
+              "height": 192
+            }
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "name": "Coco | The Cat of MHuiG",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://blog.mhuig.top/havefun/Coco/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        }
       ]
-    }
-  </script>
-</head>
-<body>
+    </script>
+  </head>
+  <body>
     <div class="card">
       <div class="product">
         <h1 class="title">MHuiG's PGP PUBLIC KEY</h1>
-        <p class="description">775C 83D6 7CBE 46A5 A18B 3D28 BA16 368B D4C4 169C</p>
-        <p class="description"><a href="https://keybase.io/mhuig" target="_blank">Keybase - MHuiG</a></p>
+        <p class="description">
+          775C 83D6 7CBE 46A5 A18B 3D28 BA16 368B D4C4 169C
+        </p>
+        <p class="description">
+          <a href="https://keybase.io/mhuig" target="_blank">Keybase - MHuiG</a>
+        </p>
       </div>
     </div>
     <div class="footer">
-      <p class="description"><a href="https://icp.gov.moe" target="_blank" rel="external nofollow noopener noreferrer" data-pjax-state="">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=2020012138" target="_blank" rel="external nofollow noopener noreferrer" data-pjax-state="">2020012138号</a><br></p>
-      <p class="description">Made with
-      <i><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-icon="heart" data-prefix="fas" width="12px" height="12px" viewBox="0 0 512 512"><defs></defs><path fill="red" d="M462 63c-54-47-136-39-186 13l-20 21-20-21C186 24 105 16 50 63c-63 53-66 149-10 208l193 199c13 13 33 13 46 0l193-199c56-59 53-155-10-208z"></path></svg></i>
-      <a href="https://mhuig.top">by MHuiG</a></p>
+      <p class="description">
+        <a
+          href="https://icp.gov.moe"
+          target="_blank"
+          rel="external nofollow noopener noreferrer"
+          data-pjax-state=""
+          >萌ICP备</a
+        >
+        <a
+          href="https://icp.gov.moe/?keyword=2020012138"
+          target="_blank"
+          rel="external nofollow noopener noreferrer"
+          data-pjax-state=""
+          >2020012138号</a
+        ><br />
+      </p>
+      <p class="description">
+        Made with
+        <i
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            data-icon="heart"
+            data-prefix="fas"
+            width="12px"
+            height="12px"
+            viewBox="0 0 512 512"
+          >
+            <defs></defs>
+            <path
+              fill="red"
+              d="M462 63c-54-47-136-39-186 13l-20 21-20-21C186 24 105 16 50 63c-63 53-66 149-10 208l193 199c13 13 33 13 46 0l193-199c56-59 53-155-10-208z"
+            ></path></svg
+        ></i>
+        <a href="https://mhuig.top">by MHuiG</a>
+      </p>
     </div>
-</body>
+  </body>
 </html>
