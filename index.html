@@ -107,7 +107,6 @@
           0 6px 6px rgba(0, 0, 0, 0.23);
       }
       .product {
-        height: 100px;
         position: relative;
         overflow: hidden;
         -webkit-transition: 0.5s ease;
@@ -127,84 +126,7 @@
       html,
       body,
       div,
-      span,
-      applet,
-      object,
-      iframe,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      blockquote,
-      pre,
-      a,
-      abbr,
-      acronym,
-      address,
-      big,
-      cite,
-      code,
-      del,
-      dfn,
-      em,
-      img,
-      ins,
-      kbd,
-      q,
-      s,
-      samp,
-      small,
-      strike,
-      strong,
-      sub,
-      sup,
-      tt,
-      var,
-      b,
-      u,
-      i,
-      center,
-      dl,
-      dt,
-      dd,
-      ol,
-      ul,
-      li,
-      fieldset,
-      form,
-      label,
-      legend,
-      table,
-      caption,
-      tbody,
-      tfoot,
-      thead,
-      tr,
-      th,
-      td,
-      article,
-      aside,
-      canvas,
-      details,
-      embed,
-      figure,
-      figcaption,
-      footer,
-      header,
-      hgroup,
-      menu,
-      nav,
-      output,
-      ruby,
-      section,
-      summary,
-      time,
-      mark,
-      audio,
-      video {
+      h1 {
         margin: 0;
         padding: 0;
         border: 0;
@@ -212,40 +134,8 @@
         font: inherit;
         vertical-align: baseline;
       }
-      article,
-      aside,
-      details,
-      figcaption,
-      figure,
-      footer,
-      header,
-      hgroup,
-      menu,
-      nav,
-      section {
-        display: block;
-      }
       body {
         line-height: 1;
-      }
-      ol,
-      ul {
-        list-style: none;
-      }
-      blockquote,
-      q {
-        quotes: none;
-      }
-      blockquote:before,
-      blockquote:after,
-      q:before,
-      q:after {
-        content: "";
-        content: none;
-      }
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
       }
       ::-webkit-scrollbar-track-piece {
         background-color: #f8f8f8;
@@ -265,6 +155,17 @@
         position: fixed;
         z-index: -1;
         bottom: 0px;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: #7c8891;
+      }
+      .social{
+        padding-top: 20px;
+      }
+      .social i {
+        margin: 0 10px;
       }
     </style>
     <script type="application/ld+json">
@@ -343,6 +244,7 @@
       ]
     </script>
   </head>
+
   <body>
     <div class="card">
       <div class="product">
@@ -350,9 +252,23 @@
         <p class="description">
           775C 83D6 7CBE 46A5 A18B 3D28 BA16 368B D4C4 169C
         </p>
-        <p class="description">
-          <a href="https://keybase.io/mhuig" target="_blank">Keybase - MHuiG</a>
-        </p>
+        <div class="social">
+          <a class="tip" title="Blog" href="http://blog.mhuig.top" target="_blank">
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M218.17 424.14c-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34c-6.37 12.78-25.03 11.37-29.48-2.09L144 386.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.75-16.19 54.06-9.7 66 14.16 1.89 3.78 5.49 5.95 9.36 6.26v-82.12l128-127.09V160H248c-13.2 0-24-10.8-24-24V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24v-40l-128-.11c-16.12-.31-30.58-9.28-37.83-23.75zM384 121.9c0-6.3-2.5-12.4-7-16.9L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1zm-96 225.06V416h68.99l161.68-162.78-67.88-67.88L288 346.96zm280.54-179.63l-31.87-31.87c-9.94-9.94-26.07-9.94-36.01 0l-27.25 27.25 67.88 67.88 27.25-27.25c9.95-9.94 9.95-26.07 0-36.01z"/></svg>
+            </i>
+          </a>
+          <a class="tip" title="Contact" href="https://mhuig.top/contact/" target="_blank">
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528 32H48C21.5 32 0 53.5 0 80v16h576V80c0-26.5-21.5-48-48-48zM0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V128H0v304zm352-232c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zM176 192c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zM67.1 396.2C75.5 370.5 99.6 352 128 352h8.2c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h8.2c28.4 0 52.5 18.5 60.9 44.2 3.2 9.9-5.2 19.8-15.6 19.8H82.7c-10.4 0-18.8-10-15.6-19.8z"/></svg>
+            </i>
+          </a>
+          <a class="tip" title="Privacy Policy" href="https://mhuig.top/privacy-policy/" target="_blank">
+            <i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M383.9 308.3l23.9-62.6c4-10.5-3.7-21.7-15-21.7h-58.5c11-18.9 17.8-40.6 17.8-64v-.3c39.2-7.8 64-19.1 64-31.7 0-13.3-27.3-25.1-70.1-33-9.2-32.8-27-65.8-40.6-82.8-9.5-11.9-25.9-15.6-39.5-8.8l-27.6 13.8c-9 4.5-19.6 4.5-28.6 0L182.1 3.4c-13.6-6.8-30-3.1-39.5 8.8-13.5 17-31.4 50-40.6 82.8-42.7 7.9-70 19.7-70 33 0 12.6 24.8 23.9 64 31.7v.3c0 23.4 6.8 45.1 17.8 64H56.3c-11.5 0-19.2 11.7-14.7 22.3l25.8 60.2C27.3 329.8 0 372.7 0 422.4v44.8C0 491.9 20.1 512 44.8 512h358.4c24.7 0 44.8-20.1 44.8-44.8v-44.8c0-48.4-25.8-90.4-64.1-114.1zM176 480l-41.6-192 49.6 32 24 40-32 120zm96 0l-32-120 24-40 49.6-32L272 480zm41.7-298.5c-3.9 11.9-7 24.6-16.5 33.4-10.1 9.3-48 22.4-64-25-2.8-8.4-15.4-8.4-18.3 0-17 50.2-56 32.4-64 25-9.5-8.8-12.7-21.5-16.5-33.4-.8-2.5-6.3-5.7-6.3-5.8v-10.8c28.3 3.6 61 5.8 96 5.8s67.7-2.1 96-5.8v10.8c-.1.1-5.6 3.2-6.4 5.8z"/></svg>
+            </i>
+          </a>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -362,20 +278,23 @@
           target="_blank"
           rel="external nofollow noopener noreferrer"
           data-pjax-state=""
-          >萌ICP备</a
         >
+          萌ICP备
+        </a>
         <a
           href="https://icp.gov.moe/?keyword=2020012138"
           target="_blank"
           rel="external nofollow noopener noreferrer"
           data-pjax-state=""
-          >2020012138号</a
-        ><br />
+        >
+          2020012138号
+        </a>
+        <br />
       </p>
       <p class="description">
         Made with
-        <i
-          ><svg
+        <i>
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             data-icon="heart"
@@ -388,8 +307,9 @@
             <path
               fill="red"
               d="M462 63c-54-47-136-39-186 13l-20 21-20-21C186 24 105 16 50 63c-63 53-66 149-10 208l193 199c13 13 33 13 46 0l193-199c56-59 53-155-10-208z"
-            ></path></svg
-        ></i>
+            ></path>
+          </svg>
+        </i>
         <a href="https://mhuig.top">by MHuiG</a>
       </p>
     </div>
