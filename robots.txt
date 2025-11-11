@@ -131,5 +131,5 @@ User-agent: *
 Content-signal: search=yes, ai-train=no
 Content-Usage: ai=n
 Allow: /
-Disallow: /cont
-Disallow: /priv
+
+
